@@ -1,8 +1,7 @@
-# IRS2022_poster
+# B07 poster for (AC)³ General Assembly 2022
 
-Poster for my contribution to the [International Radiation Symposium 2022](https://irs2022.org), session 6 "Radiation Budget and Forcing", contribution number 488, scheduled for Thursday 7th July.
+Poster for my contribution to the [(AC)³ General Assembly 2022](https://ac3-tr.de), in Klimahaus, Bremerhaven, Germany from 21 to 26 November 2022.
 
-[![DOI](https://zenodo.org/badge/508826890.svg)](https://zenodo.org/badge/latestdoi/508826890)
 
 [Here the latest released PDF file of the poster](Saavedra_etal_S6_448_IRS2022.pdf)
 
