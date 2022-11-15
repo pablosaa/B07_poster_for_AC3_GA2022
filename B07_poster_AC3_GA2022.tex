@@ -275,7 +275,7 @@ The following analysis is performed to relate sea ice lead fraction to cloud obs
 \colouredcircle LF products is analyzed for a sector 50~km around the \polarstern (red star in Fig.~\ref{fig:lf_sic}, right) with updated coordinates every minute.\\
 
 \colouredcircle Sea ice - atmosphere coupling conceptual model\\
-Vertical gradient of water vapour transport ($\nabla WVT$) is calculated from specific humidity $q_v \mathrm{[g~g^{-1}]}$ and horizontal wind $\vec{v}_w \mathrm{[m~s^{-1}]}$ from radiosonde profiles, following
+Vertical gradient of water vapour transport ($\nabla WVT$) is calculated from specific humidity $q_v~\mathrm{[g~g^{-1}]}$ and horizontal wind $\vec{v}_w~\mathrm{[m~s^{-1}]}$ from radiosonde profiles, following
 \begin{equation}
 	\nabla \mathrm{WVT} = -\frac{10^2}{g}~|q_v\cdot \vec{v}_w|~\frac{dP}{dz}
 \end{equation}
@@ -291,13 +291,13 @@ The direction of maximum transport (see grey lines in Fig.~\ref{fig:lf_sic}) is 
 \end{minipage}\\
 
 \colouredcircle Planetary boundary layer height (PBLH)\\
-The PBLH is used as top layer from which the maximimum $\nabla WVT$ is localized downwards. To have a rough estimation of PBLH, the bulk Richardson number defined as
+The PBLH is used as top layer from which the maximum $\nabla WVT$ is localized downwards. To have a rough estimation of PBLH, the bulk Richardson number defined as
 \begin{equation}
 	Ri_b(z)\,=\,\frac{g}{\theta_v}\frac{\Delta \theta_v \,\Delta z}{\left( \Delta u \right)^2\,+\,\left(\Delta v \right)^2}
 	\label{eq:Rib}
 \end{equation}
 with $g$ is the constant of gravity 9.81~$\rm m~s^{-2}$, $\theta_v$ is the virtual potential temperature profile
-in K, $\Delta \theta_v\,=\,\theta_v-\theta_v(z_0)$, $\Delta u\,=\,u-u_0$, and $\Delta v\,=\,v-v_0$, the horizontal wind components in $\rm m~s^{-1}$. The $\Delta z\,=\,z - z_0$ with $z$ the altitude of the atmosphere layers in $\rm m$ and the subscript $0$ indicates the surface reference.
+in K, $\Delta \theta_v\,=\,\theta_v-\theta_v(z_0)$, $\Delta u\,=\,u-u_0$, and $\Delta v\,=\,v-v_0$, the horizontal wind components in $\rm m~s^{-1}$. The $\Delta z\,=\,z - z_0$ with $z$ the altitude of the atmosphere layers in $\rm m$ and the subscript $0$ indicating the surface reference.
 
 \colouredcircle Cloud coupling classification: criteria based on the virtual potential temperature $\theta_v$ and location of maximum $\nabla~WVT$ below PBLH. The $\theta_v$ is analyzed to classify cases where the WVT is coupled or decoupled to the cloud.
 \begin{minipage}{0.98\linewidth}
