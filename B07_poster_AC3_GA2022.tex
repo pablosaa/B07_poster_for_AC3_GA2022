@@ -258,8 +258,8 @@ Daily sea ice lead fraction (LF) is obtained from space-borne observations based
 	%\setcaptiontype{figure}
 	\centering
 	%\subfloat{
-		\includegraphics[width=.61\linewidth]{bias_sic_timeseries.png}\hfill
-		\includegraphics[width=.35\linewidth]{mosaic0152_20191115T03271573_20191118T05301574_LF.png}
+		\includegraphics[width=.6\linewidth]{bias_sic_timeseries.png}\hfill
+		\includegraphics[width=.37\linewidth]{mosaic0152_20191115T03271573_20191118T05301574_LF.png}
 	%}
 	\captionsetup{width=0.8\linewidth}
 	\captionof{figure}{\small Left: LF and SIC for \mosaic leg 1 to 3. Vertical dashed-grey lines indicates period without Sentinel-1 data. Right: case study 18 Nov 2019.}
@@ -280,7 +280,7 @@ The direction of maximum transport (see grey lines in Fig.~\ref{fig:lf_sic}) is 
 	%\setcaptiontype{figure}
 	\centering
 	%\subfloat{
-		\includegraphics[width=.6\linewidth]{drawing_lead_cloud.png}
+		\includegraphics[width=.62\linewidth]{new_drawing_lead_cloud.png}
 	%}
 	\captionof{figure}{\smaller Sea ice interaction with observed clouds. Adapted from \refp{bib:jannos2022}}
 	\label{fig:leadcloud}
@@ -292,8 +292,7 @@ The PBLH is used as top layer from which the maximum $\nabla WVT$ is localized d
 	Ri_b(z)\,=\,\frac{g}{\theta_v}\frac{\Delta \theta_v \,\Delta z}{\left( \Delta u \right)^2\,+\,\left(\Delta v \right)^2}
 	\label{eq:Rib}
 \end{equation}
-with $g$ is the constant of gravity 9.81~$\rm m~s^{-2}$, $\theta_v$ is the virtual potential temperature profile
-in K, $\Delta \theta_v\,=\,\theta_v-\theta_v(z_0)$, $\Delta u\,=\,u-u_0$, and $\Delta v\,=\,v-v_0$, the horizontal wind components in $\rm m~s^{-1}$. The $\Delta z\,=\,z - z_0$ with $z$ the altitude of the atmosphere layers in $\rm m$ and the subscript $0$ indicating the surface reference.
+with $g$ is the constant of gravity, $\theta_v$ is the virtual potential temperature profile in K, $\Delta \theta_v\,=\,\theta_v-\theta_v(z_0)$, $\Delta u\,=\,u-u_0$, and $\Delta v\,=\,v-v_0$, the horizontal wind components in $\rm m~s^{-1}$. The $\Delta z\,=\,z - z_0$ with $z$ the altitude of the atmosphere layers in $\rm m$ and the subscript $0$ indicating the surface reference.
 
 \colouredcircle Cloud coupling classification: criteria based on the virtual potential temperature $\theta_v$ and location of maximum $\nabla~WVT$ below PBLH. The $\theta_v$ is analyzed to classify cases where the WVT is coupled or decoupled to the cloud.
 \begin{minipage}{0.98\linewidth}
@@ -302,7 +301,7 @@ in K, $\Delta \theta_v\,=\,\theta_v-\theta_v(z_0)$, $\Delta u\,=\,u-u_0$, and $\
 	%\subfloat{
 		\includegraphics[width=0.32\linewidth]{high_coupling_profile_1243UTC.png}
 		\includegraphics[width=0.32\linewidth]{low_coupling_profile_1417UTC.png}
-		\includegraphics[width=0.32\linewidth]{decoupling_profile_1844UTC.png}
+		\includegraphics[width=0.32\linewidth]{decoupling_profile_1854UTC.png}
 	%}
 	\captionof{figure}{\smaller Examples of cloud coupling (left \& middle) and decoupling (right).}
 	\label{fig:cop-dec}
@@ -348,7 +347,7 @@ in K, $\Delta \theta_v\,=\,\theta_v-\theta_v(z_0)$, $\Delta u\,=\,u-u_0$, and $\
 		\begin{center}
 			\includegraphics[width=.9\linewidth]{PBLH_zoom_cloudnet_classific_20191118}	
 			\captionsetup{width=0.83\linewidth}
-			\captionof{figure}{Close-up of Fig.~\ref{fig:classification} (top) for the lowest 1.5~km showing the PBLH (dashed-light-green), max~$\nabla WVT$ (green), and estimated cloud bottom and top heights (black lines) of the low-level stratiform mixed-phase cloud, the dotted-grey is the cloud base as detected by the ceilometer.}
+			\captionof{figure}{Close-up of Fig.~\ref{fig:classification} (top) showing the PBLH (dashed-light-green), max~$\nabla WVT$ (green), and estimated cloud bottom and top heights (black lines) of the low-level stratiform mixed-phase cloud, the dotted-grey is the cloud base as detected by the ceilometer. Coupled status is shown along the x-axis.}
 			\label{fig:closeup}
 		\end{center}
 	\end{minipage}
@@ -395,13 +394,25 @@ in K, $\Delta \theta_v\,=\,\theta_v-\theta_v(z_0)$, $\Delta u\,=\,u-u_0$, and $\
 	\label{fig:scatterWPLF}
 \end{minipage}\\
 
-From Fig.~\ref{fig:scatterWPLF} [a] a clear relationship of LWP and LF can be seen, the larger the LF the higher LWP, and the warmer the cloud top temperature too. For IWP (Fig.~\ref{fig:scatterWPLF} [b]) there is no relationship found, a wide range of IWP values occur during the observed LF. The only clear feature is the clustering of points with being gathered towards larger LF which corresponds to coupled cases as in Fig.~\ref{fig:cop-dec} (left \& middle). Shown in Fig.~\ref{fig:scatterWPLF} [c] is the gradient of cloud temperature defined as
-\begin{equation}
-	\Gamma_{\rm cloud}=\frac{\Delta T}{\Delta H}\,=\,\frac{T_{top}-T_{base}}{CTH-CBH}
-	\label{eq:lapserate}
-\end{equation}
+From Fig.~\ref{fig:scatterWPLF} [a] a clear relationship of LWP and LF can be seen, the larger the LF the higher LWP, and the warmer the cloud top temperature too. For IWP (Fig.~\ref{fig:scatterWPLF} [b]) there is no relationship found, a wide range of IWP values occur during the observed LF. The only clear feature is the clustering of points with being gathered towards larger LF which corresponds to coupled cases as in Fig.~\ref{fig:cop-dec} (left \& middle).\\
+\begin{tabular}{ll}
+	\hspace{-1em}
+	\begin{minipage}{0.65\linewidth}
+		Shown in Fig.~\ref{fig:scatterWPLF} [c] is the gradient of cloud temperature defined as Eq.~\ref{eq:lapserate}.
+		The most negative $\Gamma_{\rm cloud}$ are close to a moist adiabatic lapse-rate, whereas positive values indicate a temperature inversion at cloud top, however this is not consistent neither with increasing LF nor cloud thickness since for coupled cases there are positive and negative $\Gamma_{\rm cloud}$ which is an indicator of other factors playing a role.	
+	\end{minipage}
+	&
+	\begin{minipage}{0.31\linewidth}
+		%\color{white}
+			\begin{equation}
+			\Gamma_{\rm cloud}=\frac{\Delta T}{\Delta H}\,=\,\frac{T_{top}-T_{base}}{CTH-CBH}
+			\label{eq:lapserate}
+		\end{equation}
+	\end{minipage}
+\end{tabular}
+
  %(with $\Delta T=T_{top}-T_{base}$ and $\Delta H=CTH-CBH$ .
- The most negative $\Gamma_{\rm cloud}$ are close to a moist adiabatic lapse-rate, whereas positive values indicate a temperature inversion at cloud top, however this is not consistent neither with increasing LF nor cloud thickness since for coupled cases there are positive and negative $\Gamma_{\rm cloud}$ which is an indicator of other factors playing a role.
+ 
    
 %\parbox[l]{0.8\linewidth}{   \vspace{-.5em}
 %	{Some text here....}    
@@ -411,7 +422,7 @@ From Fig.~\ref{fig:scatterWPLF} [a] a clear relationship of LWP and LF can be se
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{4.- Conclusions}{name=conclutions,column=0,span=3,below=results}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\small
+{\normalsize
 \begin{itemize}
 		\item Relating cloud observations with LF upwind with water vapour transport as conveying mechanism for the coupling seems to be plausible approach,
 		\item A positive relationship of LWP and LF has been found; no clear relation between LF and IWP or cloud temperature gradient was found,
