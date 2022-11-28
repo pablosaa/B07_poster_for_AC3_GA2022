@@ -2,8 +2,9 @@
 
 Poster for my contribution to the [(AC)³ General Assembly 2022](https://ac3-tr.de), in Klimahaus, Bremerhaven, Germany from 21 to 26 November 2022.
 
+[![DOI](https://zenodo.org/badge/565813014.svg)](https://zenodo.org/badge/latestdoi/565813014)
 
-[Here the latest released PDF file of the poster](Saavedra_etal_S6_448_IRS2022.pdf)
+[Here the latest released PDF file of the poster](https://github.com/pablosaa/B07_poster_for_AC3_GA2022/blob/main/B07_poster_AC3_GA2022.pdf)
 
 Using LaTeX class baposter.cls as alternative for a format compliant with the official University of Leipzig Poster portrait layout.
 
